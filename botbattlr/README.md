@@ -5,10 +5,13 @@ Welcome to Bot Battlr, the one and only spot in the known universe where you can
 
 This is a React application that displays a list of available bots and their details among other functionalities.
 
-    Fork this repository to your local machine
-    Run the following command npm install in your terminal
-    Run the following command json-server --watch --db.json to start the back end
-    On a separate terminal instance, run npm start to run the application itself. If prompted select the option to run it on a different port.
+    - Fork this repository to your local machine
+    - Run the following command in your terminal 
+        npm install 
+    - Run the following command to start the back end
+        json-server --watch --db.json 
+    - On a separate terminal instance, run the following command to run the application itself. If prompted select the option to run it on a different port.
+        npm start
 
 
 ## Core Deliverables
