@@ -7,7 +7,7 @@ export default function BotCollection({bots}) {
     return(
         <div className="four col grid">
             <div className="row">
-            {bots.map(bill => <BotCard key={bots.id} bots={bill} />)}
+            {bots.map(bots => <BotCard key={bots.id} bots={bots} />)}
             </div>
             </div>
     );
