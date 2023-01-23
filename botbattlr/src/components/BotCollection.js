@@ -1,14 +1,14 @@
-import React from "react";
-import BotCard from "./BotCard";
+import React from 'react';
+import BotCard from './BotCard';
 
-export default function BotCollection({bots}) {
+export default function BotCollection({bots, handleClick, handleDischarge}) {
+  // Your code here
 
-
-    return(
-        <div className="four col grid">
-            <div className="row">
-            {bots.map(bots => <BotCard key={bots.id} bots={bots} />)}
-            </div>
-            </div>
-    );
+  return ( 
+    <div className="ui four column grid">
+      <div className="row">
+        {bots.map(bot => <BotCard key={bot.id} bot={bot} handleDischarge={handleDischarge} handleClick={handleClick} />)}
+      </div>
+    </div>
+  );
 }

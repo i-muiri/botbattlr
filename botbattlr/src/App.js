@@ -1,7 +1,5 @@
-//import logo from './logo.svg';
 import React, { useEffect, useState } from 'react';
-import './App.css';
-import Botcollection from './components/BotCollection';
+import BotCollection from './components/BotCollection';
 import BotArmy from './components/BotArmy';
 
 
@@ -16,14 +14,26 @@ export default function App() {
     .then(res => res.json())
     .then(setBots)
   }, []);
+
+  function enlistBot(id) {
+    setBots(bots.map(bot => id === bot.id ? {...bot, isEnlisted: true} : bot));
+  }
   
+
+  function delistBot(id) {
+    setBots(bots.map(bot => id === bot.id ? {...bot, isEnlisted: false} : bot));
+  }
+  
+  function dischargeBot(id) {
+    setBots(bots.filter(bot => bot.id === id ? false : true));
+  }
+
   return (
     <div>
-      <Botcollection bots= {bots}/>
-      <BotArmy />
+      
+      <BotArmy bots={bots.filter(bot => bot.isEnlisted)} handleDischarge={dischargeBot} handleClick={delistBot} />
+      <BotCollection bots= {bots}  handleDischarge={dischargeBot} handleClick={enlistBot}/>
      
     </div>
   );
 }
-
-

@@ -1,5 +1,3 @@
-
-
 body {
   margin: 0;
   padding: 0;
@@ -7,16 +5,16 @@ body {
 }
 
 .text-wrap {
-  word-wrap: break-word;
+	word-wrap: break-word;
 }
 
-.bot-army {
+.bill-cast {
   overflow-x: scroll;
   min-height: 300px;
   max-width: 100%;
 }
 
-.ui.grid > .row.bot-army-row {
+.ui.grid > .row.bill-cast-row {
   flex-wrap: nowrap;
   min-height: 100%;
 }
