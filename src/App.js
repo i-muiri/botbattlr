@@ -4,7 +4,7 @@ import BotArmy from './components/BotArmy';
 
 
 export default function App() {
-  const botsAPI = 'http://localhost:3000/bots'
+  const botsAPI = 'https://bots-taupe.vercel.app/bots'
   const [bots, setBots] = useState([]);
 
 
