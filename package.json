@@ -1,0 +1,22 @@
+{
+  "name": "bot-battlr",
+  "version": "0.1.0", 
+  
+  "scripts": {
+    "build": "react-scripts build --openssl-legacy-provider",
+    "start": "react-scripts start --openssl-legacy-provider",
+    "server": "json-server --watch db.json -p 8002"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
